@@ -6,9 +6,9 @@ DATABASE_URL = "postgresql://postgres:1234@localhost:5432/booking_db"
 engine = create_engine(DATABASE_URL)
 
 SessionLocal = sessionmaker(
-    autocommit=False,
-    autoflush=False,
-    bind=engine
+    autocommit = False,
+    autoflush = False,
+    bind = engine
 )
 
 Base = declarative_base()
