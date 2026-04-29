@@ -1,9 +1,9 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
+
 from db.database import get_db
 from api.routes import user, auth
 from db.database import Base, engine
-from models.user import User
 
 Base.metadata.create_all(bind=engine)
 
